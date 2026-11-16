@@ -179,4 +179,15 @@ body .hero .hero-photo .portrait-stage .serum-drop:not(.second)::after{backgroun
 83%{top:calc(var(--drip-end) - var(--drip-width,16px)*2.9);opacity:0;transform:translateX(-50%) scale(1.15,.55)}
 100%{top:calc(var(--drip-end) - var(--drip-width,16px)*2.9);opacity:0}}
 @media(prefers-reduced-motion:reduce){body .hero .hero-photo .portrait-stage .serum-drop{animation:none!important;opacity:0!important}}
-.catalog-grid>article .catalog-image.img-caixa{object-position:50% 50%!important}.catalog-grid>article .catalog-image.img-sacola{object-position:50% 50%!important}body .hero .hero-photo .portrait-stage .serum-drop.second{display:none!important}
+.catalog-grid>article .catalog-image.img-caixa{object-position:50% 50%!important}.catalog-grid>article .catalog-image.img-sacola{object-position:50% 50%!important}body .hero .hero-photo .portrait-stage .serum-drop.second{display:none!important}body .hero .hero-photo .portrait-stage .serum-drop:not(.second){width:calc(var(--drip-width,16px)*2.3)!important;height:calc(var(--drip-width,16px)*4.3)!important;animation:salmDropTear 3s infinite!important}
+body .hero .hero-photo .portrait-stage .serum-drop:not(.second)::before{animation:none!important;opacity:1!important}
+body .hero .hero-photo .portrait-stage .serum-drop:not(.second)::after{display:none!important}
+@keyframes salmDropTear{0%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.5);opacity:0;transform:translateX(-50%) scale(.22,.16)}
+6%{opacity:1}
+40%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.5);transform:translateX(-50%) scale(.75,.62);animation-timing-function:ease-in-out}
+52%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.5);transform:translateX(-50%) scale(.88,.9);animation-timing-function:ease-in}
+57%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.3);transform:translateX(-50%) scale(.84,1.06);animation-timing-function:cubic-bezier(.5,0,1,.5)}
+81%{top:calc(var(--drip-end) - var(--drip-width,16px)*4);opacity:1;transform:translateX(-50%) scale(.86,1.04)}
+84%{top:calc(var(--drip-end) - var(--drip-width,16px)*3.5);opacity:0;transform:translateX(-50%) scale(1.1,.6)}
+100%{top:calc(var(--drip-end) - var(--drip-width,16px)*3.5);opacity:0}}
+@media(prefers-reduced-motion:reduce){body .hero .hero-photo .portrait-stage .serum-drop{animation:none!important;opacity:0!important}}
