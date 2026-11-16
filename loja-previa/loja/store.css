@@ -77,3 +77,14 @@
 @keyframes salmFullPhotoDrip{0%,12%{top:var(--drip-start,51.5%);opacity:0;transform:translateX(-50%) scale(.25)}25%{top:var(--drip-start,51.5%);opacity:1;transform:translateX(-50%) scale(.75,1)}85%{top:var(--drip-end,58%);opacity:1;transform:translateX(-50%) scale(.8,1.35)}100%{top:var(--drip-end,58%);opacity:0;transform:translateX(-50%) scale(1.4,.3)}}
 @media(max-width:800px){.hero .hero-photo{position:absolute!important;inset:0!important;width:100%!important;height:100%!important}.hero .intro{position:relative!important}.hero:after{background:linear-gradient(90deg,rgba(94,55,74,.42),rgba(94,55,74,.05))}}
 @media(prefers-reduced-motion:reduce){.hero .hero-photo .portrait-stage .serum-drop{animation:none!important;display:none}}
+
+/* Mobile: mantém a proporção integral 2:3 da fotografia, sem recortar. */
+@media(max-width:800px){
+ .hero{display:block!important;width:100%;height:auto!important;min-height:0!important;max-height:none!important;aspect-ratio:2/3;padding:0!important}
+ .hero .hero-photo,.hero .hero-photo .portrait-stage{position:absolute!important;inset:0!important;width:100%!important;height:100%!important}
+ .hero .hero-photo .portrait-stage>img{object-fit:contain!important;object-position:center!important}
+ .hero .intro{position:absolute!important;inset:auto auto 6% 5%!important;width:43%!important;max-width:none!important;padding:0!important;margin:0!important}
+ .hero .intro h1{font-size:clamp(18px,5vw,28px)!important;line-height:1.14;margin:0 0 16px!important;letter-spacing:-.5px}
+ .hero .intro .lead{font-size:clamp(10px,2.45vw,13px)!important;line-height:1.55!important;margin:0 0 16px!important;max-width:none}
+ .hero .intro .button{padding:12px 16px!important;font-size:9px!important;min-height:0}
+}
