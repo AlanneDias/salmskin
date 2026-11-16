@@ -99,3 +99,12 @@
  .benefits-composition .benefit-point{font-size:12px!important;line-height:1.5!important;padding:10px 9px;background:rgba(255,255,255,.32);backdrop-filter:blur(4px);border-radius:12px;display:grid;grid-template-columns:26px 1fr;gap:9px}
  .benefits-composition .benefit-point svg{width:25px!important;height:25px!important;margin:0!important}
 }
+
+/* Desktop mostra a fotografia integral, com preenchimento rosa ao lado. */
+@media(min-width:801px){
+ .hero{min-height:760px!important;height:calc(100svh - 105px)!important;max-height:1050px!important}
+ .hero .hero-photo .portrait-stage>img{object-fit:contain!important;object-position:right center!important}
+ .hero .hero-photo{background:#cd9db5}
+}
+.hero .hero-photo .portrait-stage .serum-drop:not(.second){display:block!important;visibility:visible!important}
+@media(max-width:800px){.hero{height:150vw!important;min-height:0!important;max-height:none!important;aspect-ratio:auto!important}}
