@@ -32,4 +32,4 @@
   });
 })();
 
-(function(){if(!document.querySelector('.hero'))return;var ss=[].slice.call(document.querySelectorAll('main>section'));var head=document.querySelector('header');function fit(){var hh=head?head.getBoundingClientRect().height:0;ss.forEach(function(s,i){s.classList.add('stack-card');s.style.zIndex=i+1;var t=Math.min(hh,window.innerHeight-s.offsetHeight);s.style.top=t+'px'})}window.addEventListener('load',fit);window.addEventListener('resize',fit);document.addEventListener('DOMContentLoaded',fit)})();
+
