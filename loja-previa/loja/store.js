@@ -8,7 +8,7 @@
     'advanced-care':{id:'advanced-care',nome:'Advanced Care',meses:2,dias:60,de:529,por:359,off:'32% OFF',img:'../assets/produto-sorriso-rosa.webp',
       nuvem:NUVEM+'/produtos/serum-facial-salm-skin-pdrn-copia/',
       texto:'Quando o cuidado vira rotina. Este kit com 2 séruns é focado em quem já busca resultados mais consistentes na uniformização do tom e na firmeza da pele. A constância potencializa a ação regeneradora do Nano PDRN.'},
-    'pro-skin':{id:'pro-skin',nome:'Pro Skin Treatment',meses:3,dias:90,de:779,por:509,off:'35% OFF',img:'../assets/produto-sacola-rosa-v2.webp',
+    'pro-skin':{id:'pro-skin',nome:'Pro Skin Treatment',meses:3,dias:90,de:779,por:509,off:'35% OFF',img:'../assets/produto-sacola-perto.webp',
       nuvem:NUVEM+'/produtos/serum-facial-salm-skin-pdrn-copia1/',
       bonus:'BÔNUS EXCLUSIVO: Frete Grátis + Mini Guia Digital "Rotina de Pele SALM Skin".',
       texto:'O protocolo recomendado para a transformação real da sua pele. Três meses é o ciclo ideal para que os ativos nanoencapsulados atuem profundamente em todas as camadas, entregando o máximo de regeneração, clareamento e rejuvenescimento.'}

@@ -179,4 +179,4 @@ body .hero .hero-photo .portrait-stage .serum-drop:not(.second)::after{backgroun
 83%{top:calc(var(--drip-end) - var(--drip-width,16px)*2.9);opacity:0;transform:translateX(-50%) scale(1.15,.55)}
 100%{top:calc(var(--drip-end) - var(--drip-width,16px)*2.9);opacity:0}}
 @media(prefers-reduced-motion:reduce){body .hero .hero-photo .portrait-stage .serum-drop{animation:none!important;opacity:0!important}}
-.catalog-grid>article .catalog-image.img-caixa{object-position:50% 50%!important}
+.catalog-grid>article .catalog-image.img-caixa{object-position:50% 50%!important}.catalog-grid>article .catalog-image.img-sacola{object-position:50% 50%!important}body .hero .hero-photo .portrait-stage .serum-drop.second{display:none!important}
