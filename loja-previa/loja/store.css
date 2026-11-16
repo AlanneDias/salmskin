@@ -123,3 +123,8 @@
  .hero .intro .button{font-size:10px!important;padding:16px 24px!important}
  .hero:after{display:none!important}
 }
+
+/* Computador: recorte editorial preenche o banner; mobile preserva foto inteira. */
+@media(min-width:801px){
+ .hero .hero-photo .portrait-stage>img{object-fit:cover!important;object-position:50% 50%!important}
+}
