@@ -202,3 +202,41 @@ body .hero .hero-photo .portrait-stage .serum-drop:not(.second){animation:salmDr
 86%{top:calc(var(--drip-end));opacity:1;transform:translateX(-50%) scale(.86,1);clip-path:inset(0 0 100% 0)}
 87%,100%{top:calc(var(--drip-end));opacity:0;clip-path:inset(0 0 100% 0)}}
 @media(prefers-reduced-motion:reduce){body .hero .hero-photo .portrait-stage .serum-drop{animation:none!important;opacity:0!important}}
+body .hero .hero-photo .portrait-stage .serum-drop:not(.second)::before{background-image:url("../../assets/gota-serum-pontinha.png")!important}
+body .hero .hero-photo .portrait-stage .serum-drop:not(.second){animation:salmDropTip 3s infinite!important}
+@keyframes salmDropTip{0%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.25);opacity:0;transform:translateX(-50%) scale(.3,.12);clip-path:inset(0 0 0 0)}
+6%{opacity:1}
+40%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.25);transform:translateX(-50%) scale(.7,.6);animation-timing-function:ease-in-out}
+52%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.25);transform:translateX(-50%) scale(.82,.9);animation-timing-function:ease-in}
+57%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.05);transform:translateX(-50%) scale(.82,1);clip-path:inset(0 0 0 0);animation-timing-function:cubic-bezier(.5,0,1,.5)}
+80%{top:calc(var(--drip-end) - var(--drip-width,16px)*4.3);opacity:1;transform:translateX(-50%) scale(.82,1);clip-path:inset(0 0 0 0);animation-timing-function:linear}
+86%{top:calc(var(--drip-end));opacity:1;transform:translateX(-50%) scale(.82,1);clip-path:inset(0 0 100% 0)}
+87%,100%{top:calc(var(--drip-end));opacity:0;clip-path:inset(0 0 100% 0)}}
+@media(prefers-reduced-motion:reduce){body .hero .hero-photo .portrait-stage .serum-drop{animation:none!important;opacity:0!important}}
+body .hero .hero-photo .portrait-stage .serum-drop:not(.second){animation-name:salmDropTip2!important}
+@keyframes salmDropTip2{0%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.25);opacity:0;transform:translateX(-50%) scale(.3,.12);clip-path:inset(0 0 0 0)}
+6%{opacity:1}
+40%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.25);transform:translateX(-50%) scale(.72,.5);animation-timing-function:ease-in-out}
+52%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.25);transform:translateX(-50%) scale(.84,.72);animation-timing-function:ease-in}
+57%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.05);transform:translateX(-50%) scale(.82,.8);clip-path:inset(0 0 0 0);animation-timing-function:cubic-bezier(.5,0,1,.5)}
+80%{top:calc(var(--drip-end) - var(--drip-width,16px)*3.45);opacity:1;transform:translateX(-50%) scale(.82,.8);clip-path:inset(0 0 0 0);animation-timing-function:linear}
+86%{top:calc(var(--drip-end) - var(--drip-width,16px)*.0);opacity:1;transform:translateX(-50%) scale(.82,.8);clip-path:inset(0 0 100% 0)}
+87%,100%{top:calc(var(--drip-end));opacity:0;clip-path:inset(0 0 100% 0)}}
+body .hero .hero-photo .portrait-stage .serum-drop:not(.second){animation-name:salmDropTip3!important}
+@keyframes salmDropTip3{0%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.25);opacity:0;transform:translateX(-50%) scale(.3,.12);clip-path:inset(0 0 0 0)}
+6%{opacity:1}
+40%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.25);transform:translateX(-50%) scale(.72,.5);animation-timing-function:ease-in-out}
+52%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.25);transform:translateX(-50%) scale(.84,.72);animation-timing-function:ease-in}
+57%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.05);transform:translateX(-50%) scale(.82,.8);clip-path:inset(0 0 0 0);animation-timing-function:cubic-bezier(.5,0,1,.5)}
+80%{top:calc(var(--drip-end) - var(--drip-width,16px)*5.2);opacity:1;transform:translateX(-50%) scale(.82,.8);clip-path:inset(0 0 0 0);animation-timing-function:linear}
+86%{top:calc(var(--drip-end) - var(--drip-width,16px)*1.75);opacity:1;transform:translateX(-50%) scale(.82,.8);clip-path:inset(0 0 100% 0)}
+87%,100%{top:calc(var(--drip-end) - var(--drip-width,16px)*1.75);opacity:0;clip-path:inset(0 0 100% 0)}}
+body .hero .hero-photo .portrait-stage .serum-drop:not(.second){animation-name:salmDropTip4!important}
+@keyframes salmDropTip4{0%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.6);opacity:0;transform:translateX(-50%) scale(.3,.12);clip-path:inset(0 0 0 0)}
+6%{opacity:1}
+40%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.6);transform:translateX(-50%) scale(.72,.5);animation-timing-function:ease-in-out}
+52%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.6);transform:translateX(-50%) scale(.84,.72);animation-timing-function:ease-in}
+57%{top:calc(var(--drip-start) - var(--drip-width,16px)*1.35);transform:translateX(-50%) scale(.82,.8);clip-path:inset(0 0 0 0);animation-timing-function:cubic-bezier(.5,0,1,.5)}
+80%{top:calc(var(--drip-end) - var(--drip-width,16px)*4.25);opacity:1;transform:translateX(-50%) scale(.82,.8);clip-path:inset(0 0 0 0);animation-timing-function:linear}
+86%{top:calc(var(--drip-end) - var(--drip-width,16px)*.8);opacity:1;transform:translateX(-50%) scale(.82,.8);clip-path:inset(0 0 100% 0)}
+87%,100%{top:calc(var(--drip-end) - var(--drip-width,16px)*.8);opacity:0;clip-path:inset(0 0 100% 0)}}
