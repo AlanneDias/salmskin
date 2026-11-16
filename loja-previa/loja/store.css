@@ -111,3 +111,15 @@
 
 /* Mobile: texto sem placas retangulares sobre a fotografia. */
 @media(max-width:800px){.hero .intro,.hero .intro .lead,.benefits-composition .benefit-point{background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}.hero .intro:before,.hero .intro:after{display:none!important}}
+
+/* Mobile: imagem integral primeiro, apresentação em bloco separado abaixo. */
+@media(max-width:800px){
+ .hero{display:flex!important;flex-direction:column!important;height:auto!important;min-height:0!important;max-height:none!important;aspect-ratio:auto!important;overflow:hidden}
+ .hero .hero-photo{order:1;position:relative!important;inset:auto!important;width:100%!important;height:auto!important;aspect-ratio:2/3;flex:none}
+ .hero .hero-photo .portrait-stage{position:absolute!important;inset:0!important;width:100%!important;height:100%!important}
+ .hero .intro{order:2;position:relative!important;inset:auto!important;width:100%!important;max-width:none!important;padding:36px 7% 40px!important;margin:0!important;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important}
+ .hero .intro h1{font-size:30px!important;line-height:1.2;margin:0 0 22px!important}
+ .hero .intro .lead{font-size:14px!important;line-height:1.8!important;margin:0 0 25px!important;max-width:none!important}
+ .hero .intro .button{font-size:10px!important;padding:16px 24px!important}
+ .hero:after{display:none!important}
+}
