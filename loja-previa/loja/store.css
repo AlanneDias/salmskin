@@ -158,3 +158,9 @@
  .hero .hero-photo .portrait-stage{inset:0!important;width:100%!important;height:100%!important;aspect-ratio:2/3!important}
  .hero .hero-photo .portrait-stage>img{object-fit:contain!important;object-position:center!important}
 }
+
+/* Pingo mais largo e recorte desktop até a mão do conta-gotas. */
+.hero .hero-photo .portrait-stage .serum-drop:not(.second){width:calc(var(--drip-width,16px)*1.65)!important}
+@media(min-width:801px){
+ .hero .hero-photo .portrait-stage{inset:0 0 auto auto!important;height:100%!important;width:auto!important;aspect-ratio:2/3!important}
+}
