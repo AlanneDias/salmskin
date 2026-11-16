@@ -5,7 +5,7 @@
     'starter-glow':{id:'starter-glow',nome:'Starter Glow',meses:1,dias:30,de:259,por:189,off:'27% OFF',img:'../assets/produto-caixa-rosa-v2.webp',
       nuvem:NUVEM+'/produtos/serum-facial-salm-skin-pdrn/',
       texto:'Ideal para quem deseja iniciar sua jornada de cuidados com a SALM Skin. Este frasco é o ponto de partida para adaptar sua pele à tecnologia nanoencapsulada e sentir os primeiros sinais de renovação e viço.'},
-    'advanced-care':{id:'advanced-care',nome:'Advanced Care',meses:2,dias:60,de:529,por:359,off:'32% OFF',img:'../assets/serum-modelo-rosa-v2.webp',
+    'advanced-care':{id:'advanced-care',nome:'Advanced Care',meses:2,dias:60,de:529,por:359,off:'32% OFF',img:'../assets/produto-sorriso-rosa.webp',
       nuvem:NUVEM+'/produtos/serum-facial-salm-skin-pdrn-copia/',
       texto:'Quando o cuidado vira rotina. Este kit com 2 séruns é focado em quem já busca resultados mais consistentes na uniformização do tom e na firmeza da pele. A constância potencializa a ação regeneradora do Nano PDRN.'},
     'pro-skin':{id:'pro-skin',nome:'Pro Skin Treatment',meses:3,dias:90,de:779,por:509,off:'35% OFF',img:'../assets/produto-sacola-rosa-v2.webp',
