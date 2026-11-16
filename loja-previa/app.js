@@ -7,7 +7,7 @@ function setupSerumDrip(){
  function align(){
   if(!img.naturalWidth)return;
   var w=stage.clientWidth,h=stage.clientHeight,scale=(getComputedStyle(img).objectFit==='contain'?Math.min:Math.max)(w/img.naturalWidth,h/img.naturalHeight);
-  var rw=img.naturalWidth*scale,rh=img.naturalHeight*scale,ox=getComputedStyle(img).objectPosition.startsWith('100%')?w-rw:(w-rw)/2,oy=(h-rh)/2;
+  var rw=img.naturalWidth*scale,rh=img.naturalHeight*scale,ox=(w-rw)*(parseFloat(getComputedStyle(img).objectPosition.split(' ')[0])/100),oy=(h-rh)*(parseFloat(getComputedStyle(img).objectPosition.split(' ')[1]||'50%')/100);
   stage.style.setProperty('--drip-width',(rw*.019)+'px');
   stage.style.setProperty('--drip-height',(rw*.032)+'px');
   stage.style.setProperty('--drip-x',(ox+rw*.418)+'px');
