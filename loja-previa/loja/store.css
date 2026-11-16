@@ -145,3 +145,16 @@
 
 /* Gota fotográfica de sérum, sem contorno ou preenchimento vetorial. */
 .hero .hero-photo .portrait-stage .serum-drop:not(.second){background:url("../../assets/serum-gota-fotografica.webp") center/100% 100% no-repeat!important;border:0!important;border-radius:0!important;filter:none!important;box-shadow:none!important;width:calc(var(--drip-width,16px)*1.2)!important;height:var(--drip-height,26px)!important}
+
+/* Foto sem fundo, enquadramento afastado e frasco visível. */
+.hero .hero-photo{background:transparent!important}
+@media(min-width:801px){
+ .hero .hero-photo{width:62%!important;inset:0 0 0 auto!important;overflow:hidden!important}
+ .hero .hero-photo .portrait-stage{inset:-170px 0 auto auto!important;height:calc(100% + 170px)!important;width:auto!important;aspect-ratio:2/3!important}
+ .hero .hero-photo .portrait-stage>img{object-fit:contain!important;object-position:center!important}
+}
+@media(max-width:800px){
+ .hero .hero-photo{width:100%!important;inset:auto!important}
+ .hero .hero-photo .portrait-stage{inset:0!important;width:100%!important;height:100%!important;aspect-ratio:2/3!important}
+ .hero .hero-photo .portrait-stage>img{object-fit:contain!important;object-position:center!important}
+}
