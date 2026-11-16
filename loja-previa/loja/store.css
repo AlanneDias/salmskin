@@ -108,3 +108,6 @@
 }
 .hero .hero-photo .portrait-stage .serum-drop:not(.second){display:block!important;visibility:visible!important}
 @media(max-width:800px){.hero{height:150vw!important;min-height:0!important;max-height:none!important;aspect-ratio:auto!important}}
+
+/* Mobile: texto sem placas retangulares sobre a fotografia. */
+@media(max-width:800px){.hero .intro,.hero .intro .lead,.benefits-composition .benefit-point{background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}.hero .intro:before,.hero .intro:after{display:none!important}}
