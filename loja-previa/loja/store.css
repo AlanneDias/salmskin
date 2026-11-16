@@ -134,3 +134,7 @@
  .benefits-composition .benefits-serum{inset:0 -3% 0 auto!important;width:72%!important;height:100%!important;overflow:hidden!important}
  .benefits-composition .benefits-serum .benefits-photo{width:100%!important;height:100%!important;object-fit:contain!important;object-position:right bottom!important;transform:scale(1.72);transform-origin:right bottom;max-width:none!important}
 }
+
+/* A gota da fotografia foi retirada; esta gota se forma e cai no frasco. */
+.hero .hero-photo .portrait-stage .serum-drop:not(.second){width:var(--drip-width,16px)!important;height:var(--drip-height,26px)!important;border-radius:50%!important;background:radial-gradient(ellipse at 28% 20%,#ffffffef 0%,#ffffff66 14%,transparent 32%),radial-gradient(ellipse at 60% 65%,#efc2d999,#cd9db588 65%,#ffffffaa)!important;border:1px solid #ffffff99!important;box-shadow:inset -2px -2px 3px #9c617b77,inset 2px 1px 2px #fff9,0 1px 2px #915a7533!important;animation:salmRealFallingDrop 1.9s cubic-bezier(.4,0,.9,.65) infinite!important}
+@keyframes salmRealFallingDrop{0%{top:var(--drip-start);opacity:0;transform:translate(-50%,-20%) scale(.2,.2)}18%{top:var(--drip-start);opacity:1;transform:translate(-50%,-5%) scale(.55,.65)}40%{top:var(--drip-start);opacity:1;transform:translate(-50%,10%) scale(.75,1.1)}88%{top:var(--drip-end);opacity:1;transform:translate(-50%,-40%) scale(.8,1.2)}100%{top:var(--drip-end);opacity:0;transform:translate(-50%,-10%) scale(1.25,.25)}}
